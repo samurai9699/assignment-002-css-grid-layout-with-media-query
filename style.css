@@ -1,0 +1,68 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns:5px;
+    grid-template-rows:2fr 5fr 2fr ;
+    grid-template-areas:
+    "nav nav nav nav"
+    "sidebar leftsidebar main rightsidebar"
+    "sidebar boyliketurtle boyliketurtle boyliketurtle"
+    ;
+    grid-gap: 5px;
+    
+}
+nav{
+    background-color: white;
+    grid-area: nav;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+main{
+    background-color: white;
+    grid-area: main;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: black;
+}
+#leftsidebar{
+    background-color: white;
+    grid-area: leftsidebar;
+    border-radius: 2px;
+    border-style: groove;
+    border-color: black;
+}
+#rightsidebar{
+    background-color: white;
+    grid-area: rightsidebar;
+    border-radius: 2px;
+    border-style: groove;
+    border-color: black;
+}
+#page3{
+    background-color: white;
+    grid-area: page3;
+    grid-area: boyliketurtle;
+    border-radius: 2px;
+    border-style: groove;
+    border-color: black;
+}
+#footer1{
+    background-color: yellow;
+    grid-area: footer1;
+}
+#footer2{
+    background-color: aqua;
+    grid-area: footer2;
+}
+#footer3{
+    background-color: blue;
+    grid-area: footer3;
+}
+#footer4{
+    background-color: green;
+    grid-area: footer4;
+}
+#footer5{
+    background-color: purple;
+    grid-area: footer5;
+}
