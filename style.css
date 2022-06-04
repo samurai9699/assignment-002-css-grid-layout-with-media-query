@@ -2,11 +2,16 @@
     display: grid;
     height: 100vh;
     grid-template-columns:5px;
-    grid-template-rows:2fr 5fr 2fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "nav nav nav nav"
     "sidebar leftsidebar main rightsidebar"
-    "sidebar boyliketurtle boyliketurtle boyliketurtle"
+    "sidebar bt bt bt"
+    "sidebar politics politics politics"
+    "sidebar technology technology technology"
+    "sidebar locals locals locals"
+    "sidebar opinion opinion opinion"
+    "sidebar sports sports sports"
     ;
     grid-gap: 5px;
     
@@ -14,7 +19,7 @@
 nav{
     background-color: white;
     grid-area: nav;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 main{
@@ -27,42 +32,60 @@ main{
 #leftsidebar{
     background-color: white;
     grid-area: leftsidebar;
-    border-radius: 2px;
+    border-radius: 10px;
     border-style: groove;
     border-color: black;
 }
 #rightsidebar{
     background-color: white;
     grid-area: rightsidebar;
-    border-radius: 2px;
+    border-radius: 10px;
     border-style: groove;
     border-color: black;
 }
-#page3{
+#bt{
     background-color: white;
     grid-area: page3;
-    grid-area: boyliketurtle;
-    border-radius: 2px;
+    grid-area: bt;
+    border-radius: 10px;
     border-style: groove;
     border-color: black;
 }
-#footer1{
+#politics{
     background-color: yellow;
-    grid-area: footer1;
+    grid-area: politics;
 }
-#footer2{
+#technology{
     background-color: aqua;
-    grid-area: footer2;
+    grid-area: technology;
 }
-#footer3{
+#locals{
     background-color: blue;
-    grid-area: footer3;
+    grid-area: locals;
 }
-#footer4{
+#opinion{
     background-color: green;
-    grid-area: footer4;
+    grid-area: opinion;
 }
-#footer5{
+#sports{
     background-color: purple;
-    grid-area: footer5;
+    grid-area: sports;
 }
+/* smaller device of 576px and up */
+@media (max-width: 576px){}
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 2.3fr 1.5fr 1.2fr 1.2fr 0.8fr;
+        grid-template-areas: 
+              "nav"
+              "leftsidebar"
+              "rightsidebar"
+              "main"
+              "bt"
+              "politics"
+              "technology"
+              "locals"
+              "opinion"
+              "sports"
+        ;
+    }  
