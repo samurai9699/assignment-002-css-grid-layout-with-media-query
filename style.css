@@ -1,17 +1,16 @@
 .container{
     display: grid;
     height: 100vh;
-    grid-template-columns:5px;
+    grid-template-columns:1fr 1fr 1fr;
     grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "nav nav nav nav"
-    "sidebar leftsidebar main rightsidebar"
-    "sidebar bt bt bt"
-    "sidebar politics politics politics"
-    "sidebar technology technology technology"
-    "sidebar locals locals locals"
-    "sidebar opinion opinion opinion"
-    "sidebar sports sports sports"
+    "nav nav nav"
+    "leftsidebar main rightsidebar"
+    "bt politics politics"
+    "bt technology technology"
+    "bt locals locals "
+    "bt opinion opinion"
+    "bt sports sports"
     ;
     grid-gap: 5px;
     
@@ -71,21 +70,5 @@ main{
     background-color: purple;
     grid-area: sports;
 }
-/* smaller device of 576px and up */
 @media (max-width: 576px){}
-    .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.2fr 2.3fr 1.5fr 1.2fr 1.2fr 0.8fr;
-        grid-template-areas: 
-              "nav"
-              "leftsidebar"
-              "rightsidebar"
-              "main"
-              "bt"
-              "politics"
-              "technology"
-              "locals"
-              "opinion"
-              "sports"
-        ;
-    }  
+   
